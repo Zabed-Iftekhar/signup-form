@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <title>Sign Up form</title>
+</head>
+<body>
+  <div class="img-container">
+    <img src="language.jpg" alt="vector image of students learning language with country flags in the background">
+  </div>
+
+  <div class="form-container">
+    <form>
+      <div class="header-container">
+        <h2>Sign Up</h2>
+        <p>And enjoy learning during the time you saved !</p>
+      </div>
+      
+      <div class="row-name-email">
+        <div class="row1">
+          <label for="name" class="form-row">Name <span class="asteric-mandatory">*</span></label>
+          <input type="text" id="name" name="name" placeholder="" pattern="^[^0-9]+$" size="30" maxlength="245" minlength="2" required>
+        </div>
+          
+        <div class="row1">
+          <label for="email" class="form-row">Email <span class="asteric-mandatory">*</span> </label>
+          <input type="email" id="email" name="email" placeholder="john.mason@gmail.com" required>
+        </div>
+      </div>
+      
+      <label for="password" class="form-row" >Password <span class="asteric-mandatory">*</span></label>
+      <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" min="8"
+       title="Your password must contain at least one number,one Capital letter,one small letter and 8 or more characters"
+      placeholder="8+ Characters, 1 Capital Letter" required>
+      
+    
+      
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="checkbox"></input>
+        <label for="checkbox">
+        Creating an account means you're okay with our <a href="">Terms of Service</a> and our <a href=""> Privacy Policy</a>
+      </label>
+      </div>
+      
+      <div class="button-container">
+        <button type="submit">Create an Account</button>
+      </div>
+      
+      <p>Already have an account ? <a href="">Sign in</a></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
